@@ -1,37 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shery.js vid 2 </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <div id="page-1">
             <nav>
                 <div id="nav-left">
-                    <p> Home </p>
-                    <p> Pricing </p>
-                    <p> Products </p>
+                    <p> Home <span class="nav-btn-wrapper"></span> </p>
+                    <p> Pricing <span class="nav-btn-wrapper"></span></p>
+                    <p> Products <span class="nav-btn-wrapper"></span></p>
                 </div>
                 <div id="center-nav">
-                    <p> Sheryains </p>
+                    <p> Sheryains <span class="nav-btn-wrapper"></span></p>
                 </div>
-                <p> Our Journey</p>
+                <p> Our Journey <span class="nav-btn-wrapper"></span></p>
             </nav>
             <div id="hero">
-                <div id="susan-div">
+                <div class="hero-anim" id="susan-div">
                     <h5> 01. </h5>
                     <h2> Lorem, ipsum dolor. </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit a magnam quo nobis voluptatem quia reiciendis voluptatum dolore?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit a magnam quo nobis
+                        voluptatem quia reiciendis voluptatum dolore?</p>
                     <div id="susan-img-div">
                         <img src="./images/pinkgreenplant.jpg" alt="">
                     </div>
                 </div>
+                <div class="hero-anim" id="hero-mid">
+                    <div id="h1s">
+                        <h1> Ephermeral</h1>
+                        <h1> Equilibrium. </h1>
+                    </div>
+                    <div id="textNimg">
+                        <img src="./images/pinkplant.jpg" alt="">
+                        <p> Committed to Sustainablity, eco-friendly choices for a better tomorrow.</p>
+                    </div>
+                </div>
+                <div class="hero-anim" id="hero-end">
+                    <div id="visit">
+                        <div id="circlev"><i class="ri-arrow-down-line"></i></div>
+                        <p> visit our gallery.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="motive">
+                <h2> OUR MOTIVE </h2>
+                <p>At Sheryains, we are deeply committed to sustainability. We believe in a greener, more sustainable
+                    future, <span> <img src="./images/bluegirl.jpg" alt=""></span> and it's at the core of everything we
+                    do. Our practices are designed with environmental <span> <img src="./images/shaljam.jpg" alt="">
+                    </span> responsiblity in min, from sourcing eco-friendly <span> <img src="./images/grass.jpg"
+                            alt=""> </span> materials to reducing our carbon footprints.</p>
             </div>
         </div>
+        <div id="page-2">
+            <div id="pg-2-wrapper">
+                <div id="img-div-1">
+                    <img src="./images/sea.jpg" alt="">
+                    <h2 style="margin: 4% 0%;"> Synergy </h2>
+                    <p> Committed to sustainablity, eco-friendly choices for a better tomorrow. </p>
+                </div>
+                <div id="img-div-2">
+                    <img src="./images/cloud.jpg" alt="">
+                    <h2 style="margin: 4% 0%;"> Harmony </h2>
+                    <p> Committed to sustainablity, eco-friendly choices for a better tomorrow. </p>
+                </div>
+            </div>
+        </div>
+        <div id="page-3">
+            <img src="./images/bottle.jpg" alt="">
+            <div id="text-div-p3">
+                <h2> Boidegradable </h2>
+                <h2> Packaging </h2>
+                <p> Committed to sustainablity, eco-friendly choices for a better tomorrow. </p>
+            </div>
+        </div>
+        <div id="end-page">
+            <video src="./images/back.mp4" autoplay muted loop></video>
+            <h1> THINK OF FUTURE </h1>
+            <button> Join The Movement </button>
+        </div>
+
     </main>
-    <script src=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
