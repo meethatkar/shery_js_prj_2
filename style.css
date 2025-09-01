@@ -14,21 +14,28 @@ body {
     background-color: #f1f1f1;
     /* background-color: #696969; */
     font-family: "Sansation";
+    /* overflow-x: hidden; */
+}
+
+#main{
+    width: 100%;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-#page-1 {
+/* CHANGED */
+/* #page-1 {
     min-height: 100vh;
     width: 100%;
-}
+    position: relative;
+} */
 
 nav {
-    width: 100%;
+    /* width: 100%; CHANGED*/
     padding: 1% 0%;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1.1vmax;
@@ -64,8 +71,8 @@ nav span{
 }
 
 #hero {
-    min-height: 80vh;
-    /* width: 100%; */
+    /* min-height: 120vh; CHANGED */
+    width: 100%;        /* CHANGED */
     margin-top: 15vw;
     /* background-color: pink; */
     display: flex;
@@ -99,28 +106,32 @@ nav span{
 
 #hero-mid {
     width: 30%;
-    height: 100%;
+    height: fit-content;
     /* background-color: aqua; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; CHANGED */
     position: relative;
-    z-index: 1;
+    /* z-index: 1; CHANGED */
 }
 
 #textNimg {
-    height: 100%;
+    height: fit-content; /* CHANGED */
+    width: fit-content; /* CHANGED */
+    /* height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  CHANGED*/
     gap: 10%;
     position: relative;
-    z-index: 100;
+    z-index: 5;
 }
   
 
-#hero-mid img {
+#textNimg img {
     height: 100%;
+    width: 100%;        /* CHANGED */
+    object-fit: cover;      /* CHANGED */
     opacity: 1;
 }
 
@@ -130,13 +141,14 @@ nav span{
     left: -30%;
     font-size: 3vmax;
     line-height: 5vmax;
-    z-index: 101;
     color: black;
+    z-index: 99999;
 }
 
 #h1s h1 {
     font-weight: 400;
     letter-spacing: -0.2vw;
+    position: relative;         /* CHANGED */
 }
 
 #hero-mid p {
@@ -278,16 +290,35 @@ nav span{
 }
 
 #text-div-p3{
-    width: calc(100%-75%);
+    width: 55%;
+    /* background-color: yellow; */
+    height: 25vh;
+    overflow: hidden;
+    position: relative;
 }
 .p3-text{
     width: 100%;
+    position: relative;
     /* background-color: #888888; */
+}
+.p3-text:nth-child(1){
+    top: 0%;
+}
+ .p3-text:nth-child(2){
+    top: 0%;
+}
+
+.p3-text:nth-child(3){
+    top: -115%;
+}
+
+.p3-text:nth-child(4){
+    top: -230%;
 }
 
 .p3-text h2{
     line-height: 2.8vmax;
-    font-size: 3vmax;
+    font-size: 2rem;
 }
 
 .p3-text p{
@@ -315,12 +346,12 @@ nav span{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: all 0.5s ease;
 }
 
 #end-page h1{
-    color: rgb(46, 46, 46);
+    color: white;
     margin-bottom: 0.1%;
+    mix-blend-mode: difference;
 }
 
 #end-page h1, #end-page button{
